@@ -1,0 +1,45 @@
+        body {
+          background: linear-gradient(135deg, #1e3c72, #2a5298);
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .register-card {
+          border-radius: 15px;
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+          padding: 30px;
+          background-color: #ffffff;
+        }
+
+        .form-control:focus {
+          box-shadow: none;
+          border-color: #2a5298;
+        }
+
+        .btn-primary {
+          background-color: #2a5298;
+          border: none;
+        }
+
+        .btn-primary:hover {
+          background-color: #1e3c72;
+        }
+
+        .password-strength {
+          font-size: 0.9rem;
+        }
+
+        .strength-weak {
+          color: red;
+        }
+
+        .strength-medium {
+          color: orange;
+        }
+
+        .strength-strong {
+          color: green;
+        }
