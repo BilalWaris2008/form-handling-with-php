@@ -81,6 +81,7 @@ include("./config.php");
         if (mysqli_query($connection, $query)) {
             echo "<script>
             alert('Registered Successfully')
+            window.location.href = './preview.php'
         </script>";
         } else {
             echo "Error" . mysqli_error($connection);
