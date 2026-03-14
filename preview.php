@@ -21,7 +21,6 @@ $result = mysqli_query($connection, $query);
 
 ?>
 
-
 <body>
 
     <h1>
@@ -42,12 +41,11 @@ $result = mysqli_query($connection, $query);
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "      
                 <tr>
-                <td>".$row['id']."</td>
-                <td>".$row['fullname']."</td>
-                <td>".$row['email']."</td>
-                <td>".$row['password']."</td>
-                <td><button class='edit'>Edit</button><button class='delete'>Delete</button></td>
-            
+                <td>" . $row['id'] . "</td>
+                <td>" . $row['fullname'] . "</td>
+                <td>" . $row['email'] . "</td>
+                <td>" . $row['password'] . "</td>
+                <td><button class='edit'>Edit</button><button class='delete'>Delete</button></td>            
                 </tr>";
             }
 
