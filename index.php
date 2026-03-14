@@ -13,7 +13,7 @@ include("./config.php");
     <title>Professional Register Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap 5 CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
@@ -22,50 +22,6 @@ include("./config.php");
 <body>
 
     <?php
-
-    // $text = "Batch 2025";
-
-    // echo $text;
-
-    // $fullname = "Azaan Ajmal Roghani";
-    // $email = "roghani@gmail.com";
-    // $number = "123456789";
-    // $password = "Roghani@123";
-
-
-    // echo $fullname;
-    // echo "<br>";
-    // echo $email;
-    // echo "<br>";
-    // echo $number;
-    // echo "<br>";
-    // echo $password;
-    // echo "<br>";
-
-
-    // $value1 = 150;
-    // $value2 = 50;
-
-    // echo $value1 + $value2;
-    // echo "<br>";
-    // echo $value1 - $value2;
-    // echo "<br>";
-    // echo $value1 * $value2;
-    // echo "<br>";
-    // echo $value1 / $value2;
-    // echo "<br>";
-    // echo $value1 % $value2;
-    // echo "<br>";
-
-
-    // $marks = 70;
-
-    // if($marks >= 70){
-    //     echo "Grade A";
-    // } else{
-    //     echo "Grade B";
-    // };
-
 
     if (isset($_POST['submit'])) {
 
@@ -81,7 +37,7 @@ include("./config.php");
         if (mysqli_query($connection, $query)) {
             echo "<script>
             alert('Registered Successfully')
-            window.location.href = './preview.php'
+            window.location.href = './adminlogin.php'
         </script>";
         } else {
             echo "Error" . mysqli_error($connection);
@@ -131,15 +87,6 @@ include("./config.php");
                                 Passwords do not match.
                             </div>
                         </div>
-
-                        <!-- <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="terms" required>
-                        <label class="form-check-label">I agree to the Terms & Conditions</label>
-                        <div class="invalid-feedback">
-                            You must agree before submitting.
-                        </div>
-                    </div> -->
-
                         <button type="submit" name="submit" class="btn btn-primary w-100">Register</button>
 
                     </form>
