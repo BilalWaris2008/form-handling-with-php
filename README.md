@@ -16,6 +16,10 @@ A simple and secure **PHP & MySQL Login & Registration System** that allows user
 
 ---
 
+<img width="641" height="278" alt="simple crud database" src="https://github.com/user-attachments/assets/f91f4f6c-1926-43b1-85f7-85abc66f6a37" />
+
+---
+
 ## ✨ Features
 
 - 🔐 User Login Authentication
