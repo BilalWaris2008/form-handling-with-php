@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background: rgb(238, 240, 243);
+}
+
+.side-bar {
+    width: 240px;
+    background: rgb(30, 58, 95);
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: rgb(77, 166, 255);
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.table {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.table-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: rgb(234, 244, 255);
+    padding: 12px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+tr:hover {
+    background: rgb(247, 251, 255);
+}
+
+.btn {
+    display: inline-block;
+    margin: 4px;
+    padding: 7px 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.edit {
+    background-color: #2196f3;
+}
+
+.delete {
+    background-color: #f44336;
+}
+
+.add {
+    background-color: rgb(69, 111, 167);
+}
+
+.icon {
+    font-size: 0.8rem;
+}
+
+.active {
+    background: rgb(77, 166, 255);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
